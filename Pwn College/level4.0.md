@@ -1,0 +1,3 @@
+# Level 4.0
+
+Initially when I did this level, in Binary Ninja, I couldn't see the mangling. So I thought I'd figure it out based on the mangled output that it would give and just gave the value it was comparing it for directly, but to my surprise, it gave the flag. So I thought no mangling was happening. But now for writing this writeup, when I was looking at the code in Ida this time, I noticed that it was actually sorting it. But I got the flag because mine was already sorted for.

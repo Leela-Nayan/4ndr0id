@@ -1,0 +1,3 @@
+# Level 1.0
+
+Looked at the code using Binary Ninja, input was stored in buf and was being compared to a string using the memcmp function, where the third arg mentioned was 5uLL. Initially I didn't give much heed to it but yesterday when I wa going through Gojo's I noticed that some dummy functions were also returning things like 0uLL. Only when I googled about that did I get to know that u stands for unsigned meaning postive and the LL stands for long long. So the 3rd arg in memcmp was asking it to compare the first 5 bytes of the first and second args. Gave the string and got the flag.
